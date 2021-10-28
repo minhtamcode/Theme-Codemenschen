@@ -10,6 +10,16 @@
 			"area": "footer"
 		}
 	],
+	"template": [
+		{
+			"name": "index",
+			"area": "index"
+		},
+		{
+			"name": "about-us",
+			"area": "about-us"
+		}
+	],
 	"settings": {
 		"layout": {
 			"contentSize": "1140px",
