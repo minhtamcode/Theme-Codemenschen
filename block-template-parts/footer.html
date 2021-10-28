@@ -1,0 +1,192 @@
+<footer>
+    <div class="footer-main-data">
+      <div class="container">
+        <div class="row">
+          <div class="footer-data-start">
+            <div class="footertop">
+              <div class="footer-logo">
+                <img src="./wp-content/themes/Sell-Theme-WP/assets/images/footer.png">
+              </div>
+              <div class="footer-logo-menu">
+              </div>
+            </div>
+            <div class="footer-bottotm-data">
+              <div class="footer-add">
+                <p>123</p>
+                <p>123</p>
+                <p>123</p>
+              </div>
+              <div class="footer-logo-menu otr">
+                <ul>
+                  <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./wp-content/themes/Sell-Theme-WP/assets/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./wp-content/themes/Sell-Theme-WP/assets/js/bootstrap.min.js"></script>
+<script src="./wp-content/themes/Sell-Theme-WP/assets/js/slick.min.js"></script>
+
+<script>
+if($( window ).width() <= 900){
+    $(document).ready(function(){
+        $(".left-header-contet ul li.drop-menu").click(function(){
+            $(this).find(".sub-menu").slideToggle(200);
+        });
+    });
+}
+</script>
+<script>
+$(document).ready(function(){
+        $("#mreu").click(function(){
+            $("body").toggleClass("body_main");
+            $("#main_menu").slideToggle();
+        });
+    });
+</script>
+
+<script type="text/javascript">
+  $('.autoplay').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: false,
+      dots: true,
+    autoplaySpeed: 2000,
+    focusOnSelect: true,
+pauseOnHover:false,
+responsive: [
+{
+  breakpoint: 1024,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true
+  }
+},
+{
+  breakpoint: 600,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll:1,
+    infinite: true,
+    dots: true
+  }
+},
+{
+  breakpoint: 480,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+}
+// You can unslick at a given breakpoint now by adding:
+// settings: "unslick"
+// instead of a settings object
+]
+  });
+</script>
+
+<script type="text/javascript">
+  $('.autoplay1').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+      dots: true,
+    autoplaySpeed: 2000,
+    focusOnSelect: true,
+pauseOnHover:false,
+responsive: [
+{
+  breakpoint: 1024,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true
+  }
+},
+{
+  breakpoint: 600,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll:1,
+    infinite: true,
+    dots: true
+  }
+},
+{
+  breakpoint: 480,
+  settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+}
+]
+  });
+  $('.autoplay5').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    arrows: false,
+      dots: true,
+    autoplaySpeed: 2000,
+    focusOnSelect: true,
+pauseOnHover:false
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+      $(".navbar-nav li.dropdown").click(function(){
+          $(this).find("ul.sub-menu").slideToggle(100);
+      });
+  });
+
+
+   $( ".main-row" ).each( function( index, element ){
+            $(this).find('.toggle-btn').addClass('same-radar' + index);
+            $(this).find('.main-box-new').addClass('same-radar1' + index);
+              
+            $('.same-radar' + index).click(function(){
+              $('.main-box-new').css('display','none');
+              $('.same-radar1' + index).slideToggle();
+            });
+            
+  });
+
+   $( ".tranner-traner-deara-main" ).each( function( index, element ){
+            $(this).find('.plus-icon-main').addClass('ex-link' + index);
+            $(this).find('.traber-imag').addClass('ex-img' + index);
+            $(this).find('.tranners-main-data-one').addClass('ex-main' + index);
+            $(this).find('.tranner-des-start').addClass('ex-con' + index);
+            $(this).find('.tranner-des-start h6').addClass('ex-per' + index);
+              
+            $('.ex-link' + index).click(function(){
+              $(this).toggleClass('expand-link');
+              $('.ex-img' + index).toggleClass('expand-img');
+              $('.ex-con' + index).toggleClass('expand-con');
+              $('.ex-per' + index).toggle();
+            });
+            
+  });
+
+   $('.plus-icon-main a').click(function(){
+
+   });
+  </script>
